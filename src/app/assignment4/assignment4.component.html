@@ -1,0 +1,13 @@
+<hr>
+<div>assignment 4</div>
+
+<div style="display: flex;">
+  <div *ngFor="let i of [].constructor(counter); let j=index">
+    <app-odd *ngIf="j%2!==0">{{j}}</app-odd>
+    <app-even *ngIf="j%2===0">{{j}}</app-even>
+  </div>
+</div>
+{{counter}}
+<button (click)="start()">Start</button>
+<button (click)="stop()">stop</button>
+<hr>
